@@ -1,0 +1,38 @@
+GET http://localhost:3000/comments/
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/posts/1/
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   "id":1, 
+    "username": "govardhan123",
+    "password": "govardhan@123"
+    
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+   "username": "govardhan123",
+   "password": "govardhan@123"
+    
+}
+
+###
+
+POST http://localhost:3000/posts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdvdmFyZGhhbjEyMyIsImlhdCI6MTcyMjM5MjY1NX0.z7pYJTwZWli8MldckpVg7jm3Mecr37hVdex5JhIYWmQ
+
+{   "post_id":1, 
+    "post":"In india politics are very effective, hard things"
+    
+}
